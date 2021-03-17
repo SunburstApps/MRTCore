@@ -26,6 +26,5 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="MRM.def" />
-    <None Include="packages.config" />
   </ItemGroup>
 </Project>
