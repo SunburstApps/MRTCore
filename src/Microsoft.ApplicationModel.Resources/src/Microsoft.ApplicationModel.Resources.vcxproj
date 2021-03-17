@@ -192,7 +192,14 @@
     <ClCompile Include="ResourceNotFoundEventArgs.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <Midl Include="Microsoft.ApplicationModel.Resources.idl" />
+    <Midl Include="Microsoft.ApplicationModel.Resources.idl">
+      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)_h.h</HeaderFileName>
+      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)_h.h</HeaderFileName>
+      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">$(IntDir)%(Filename)_h.h</HeaderFileName>
+      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">$(IntDir)%(Filename)_h.h</HeaderFileName>
+      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Filename)_h.h</HeaderFileName>
+      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(Filename)_h.h</HeaderFileName>
+    </Midl>
   </ItemGroup>
   <ItemGroup>
     <None Include="Microsoft.ApplicationModel.Resources.def" />
