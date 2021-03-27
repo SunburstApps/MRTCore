@@ -12,7 +12,9 @@
   </ItemGroup>
   
   <ItemGroup>
-    <ProjectReference Include="..\src\Microsoft.ApplicationModel.Resources.vcxproj" />
+    <ProjectReference Include="..\src\Microsoft.ApplicationModel.Resources.vcxproj">
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
   </ItemGroup>
 
   <PropertyGroup>
