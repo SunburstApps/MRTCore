@@ -5,6 +5,10 @@
     <TargetPlatformMinVersion>10.0.17134.0</TargetPlatformMinVersion>
     <Platforms>x64;x86;ARM64</Platforms>
     <PlatformTarget>AnyCPU</PlatformTarget>
+
+    <PackageId>Sunburst.MRTCore</PackageId>
+    <EnableDefaultNoneItems>false</EnableDefaultNoneItems>
+    <NoWarn>NU5100</NoWarn>
   </PropertyGroup>
 
   <ItemGroup>
@@ -23,6 +27,23 @@
 
   <ItemGroup>
     <CsWinRTInputs Include="$(OutDir)/**/*.winmd" />
+  </ItemGroup>	
+
+  <ItemGroup>
+    <None Include="Directory.Build.targets" />
+    
+    <Content Include="priconfig.xml">
+      <Pack>true</Pack>
+      <PackagePath>build</PackagePath>
+    </Content>
+    <Content Include="Sunburst.MRTCore.props">
+      <Pack>true</Pack>
+      <PackagePath>build</PackagePath>
+    </Content>
+    <Content Include="Sunburst.MRTCore.targets">
+      <Pack>true</Pack>
+      <PackagePath>build</PackagePath>
+    </Content>
   </ItemGroup>
 
 </Project>
