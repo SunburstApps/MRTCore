@@ -7,6 +7,12 @@
     <PlatformTarget>AnyCPU</PlatformTarget>
 
     <PackageId>Sunburst.MRTCore</PackageId>
+    <Authors>William Kent</Authors>
+    <Company>William Kent</Company>
+    <Title>Standalone MRT Core</Title>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/SunburstApps/MRTCore</PackageProjectUrl>
+
     <EnableDefaultNoneItems>false</EnableDefaultNoneItems>
     <NoWarn>NU5100</NoWarn>
 
