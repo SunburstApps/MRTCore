@@ -9,6 +9,11 @@
     <PackageId>Sunburst.MRTCore</PackageId>
     <EnableDefaultNoneItems>false</EnableDefaultNoneItems>
     <NoWarn>NU5100</NoWarn>
+
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
   </PropertyGroup>
 
   <ItemGroup>
