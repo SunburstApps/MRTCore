@@ -35,7 +35,7 @@
     </PropertyGroup>
     
     <Exec Command="&quot;$(MakePRIPath)&quot; new /pr &quot;$(MRTCoreResourceRootAbsolute)&quot; /cf &quot;$(MRTCoreConfigurationFile)&quot; /of &quot;$(IntermediateOutputPath)$(TargetName)$(_ManualPriSuffix).pri&quot; /o" />
-    <Exec Command="&quot;$(MakePRIPath)&quot; resourcepack /pr &quot;$(MRTCoreResourceRootAbsolute)&quot; /cf &quot;$(MRTCoreConfigurationFile)&quot; /if &quot;$(IntermediateOutputPath)$(TargetName)$(_ManualPriSuffix).pri&quot; /of &quot;$(IntermediateOutputPath)$(TargetName).manual.pri&quot; /o" />
+    <Exec Command="&quot;$(MakePRIPath)&quot; resourcepack /pr &quot;$(MRTCoreResourceRootAbsolute)&quot; /cf &quot;$(MRTCoreConfigurationFile)&quot; /if &quot;$(IntermediateOutputPath)$(TargetName)$(_ManualPriSuffix).pri&quot; /of &quot;$(IntermediateOutputPath)$(TargetName)$(_ManualPriSuffix).pri&quot; /o" />
 
     <ItemGroup>
       <_PriFile Include="$(IntermediateOutputPath)$(TargetName)$(_ManualPriSuffix).pri" />
