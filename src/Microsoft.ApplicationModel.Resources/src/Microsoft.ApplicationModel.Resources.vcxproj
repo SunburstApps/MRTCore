@@ -87,7 +87,7 @@
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
-    <Import Project="..\..\..\tools\cppwinrt\build\native\Microsoft.Windows.CppWinRT.props" />
+    <Import Project="..\..\..\tools\cppwinrt\Microsoft.Windows.CppWinRT.props" />
   </ImportGroup>
   <ImportGroup Label="Shared">
   </ImportGroup>
@@ -215,6 +215,7 @@
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
-    <Import Project="..\..\..\tools\cppwinrt\build\native\Microsoft.Windows.CppWinRT.targets" />
+    <Import Project="..\..\..\tools\cppwinrt\Microsoft.Windows.CppWinRT.targets" />
+    <Import Project="$(VCPKG_INSTALLATION_ROOT)\scripts\buildsystems\msbuild\vcpkg.targets" Condition="'$(VCPKG_INSTALLATION_ROOT)' != ''" />
   </ImportGroup>
 </Project>
