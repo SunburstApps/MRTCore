@@ -18,18 +18,20 @@
     <ItemGroup>
       <Content Include="@(NativeContent_Win32)">
         <Pack>true</Pack>
-        <PackagePath>runtime\win-x86\native</PackagePath>
+        <PackagePath>runtimes\win-x86\native</PackagePath>
       </Content>
 
       <Content Include="@(NativeContent_x64)">
         <Pack>true</Pack>
-        <PackagePath>runtime\win-x64\native</PackagePath>
+        <PackagePath>runtimes\win-x64\native</PackagePath>
       </Content>
 
       <Content Include="@(NativeContent_ARM64)">
         <Pack>true</Pack>
-        <PackagePath>runtime\win-arm64\native</PackagePath>
+        <PackagePath>runtimes\win-arm64\native</PackagePath>
       </Content>
+
+      <Content Remove="@(Content)" Condition="'%(Extension)' == '.winmd'" />
     </ItemGroup>
   </Target>
 
