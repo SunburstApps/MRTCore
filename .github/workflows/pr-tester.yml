@@ -21,7 +21,7 @@ jobs:
       working-directory: ./src/Microsoft.ApplicationModel.Resources/projection
       run: |
         & MSBuild.exe /nologo /m /p:Configuration=Release /t:Pack
-    - uses: github/upload-artifact@v2
+    - uses: actions/upload-artifact@v2
       name: Upload Assets
       with:
         name: nuget
