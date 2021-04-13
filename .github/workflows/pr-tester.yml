@@ -20,7 +20,7 @@ jobs:
     - name: Build
       working-directory: ./src/Microsoft.ApplicationModel.Resources/projection
       run: |
-        & MSBuild.exe /nologo /m /p:Configuration=Release /t:Pack
+        & MSBuild.exe /nologo /restore /m /p:Configuration=Release /t:Pack
     - uses: actions/upload-artifact@v2
       name: Upload Assets
       with:
